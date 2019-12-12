@@ -60,3 +60,6 @@ sudo ./power_cycle
 ```
 
 Then you can find the video1 which have changed to video0.<br>
+```
+ls /dev/video* -l
+```
