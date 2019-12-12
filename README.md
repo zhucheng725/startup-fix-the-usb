@@ -5,13 +5,13 @@ If you wanna to start your program automatically when turn on the electricity to
 <br>
 ### 1.startuo application<br>
 First, you can search the "startup application" in your TX2.<br>
-[!image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/1.png)
+![image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/1.png)
 <br>
 Then you click the "Add" button and find the /usr/bin/gnome-terminal<br>
-[!image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/2.png)
+![image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/2.png)
 <br>
 After that , click the rectangle.<br>
-[!image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/3.png)
+![image](https://github.com/zhucheng725/startup-fix-the-usb/blob/master/3.png)
 
 Then find the .bashrc and add your grogram such as :<br>
 ```
