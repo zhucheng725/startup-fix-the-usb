@@ -17,11 +17,11 @@ Then find the .bashrc and add your grogram such as :<br>
 ```
 python3 /xx/xx.py
 ```
-<br>
-### 2.fix the usb<br>
-<br>
+
+### 2.sfix the usb<br>
+
 There are two ways to fix the usb.<br>
-One way is using the udev.<br>
+One way is using the udev
 ```
 sudo vim /etc/udev/rules.d/90-video-device.rules
 
@@ -29,18 +29,16 @@ SUBSYSTEM=="video*",ATTRS{idVendor}=="046d",ATTRS{idProduct}=="0826",KERNELS=="1
 
 ```
 
-<br>
 idVendor and idProduct can use the command to find it:
-<br>
 ```
 lsusb
 ```
-<br>
+
 kernals can use this command to find it:<br>
 ```
 find /sys/ -name "video*"
 ```
-<br>
+
 And restart the system.<br>
 
 If you use python cv2, you can change the address as following:<br>
@@ -48,17 +46,17 @@ If you use python cv2, you can change the address as following:<br>
 ```
 cap = cv2.VideoCapture("/dev/video10")
 ```
-<br>
+
 Another way is use the realtek_hub_power_cycle<br>
-<br>
+
 Follow the nvidia dev website: https://devtalk.nvidia.com/default/topic/1058341/jetson-nano/usb-power-control/post/5375784/#5375784<br>
 
-download the realtek_hub_power_cycle.zip and unzip it.<br>
+download the realtek_hub_power_cycle.zip and unzip it.
 
 ```
 sudo apt-get install libusb-1.0-0-dev
 gcc -o power_cycle realtek_hub_power_cycle.c -lusb-1.0
 sudo ./power_cycle
 ```
-<br>
+
 Then you can find the video1 which have changed to video0.<br>
