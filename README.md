@@ -18,7 +18,7 @@ Then find the .bashrc and add your grogram such as :<br>
 python3 /xx/xx.py
 ```
 <br>
-### fix the usb<br>
+### 2.fix the usb<br>
 <br>
 There are two ways to fix the usb.<br>
 One way is using the udev.<br>
@@ -28,6 +28,7 @@ sudo vim /etc/udev/rules.d/90-video-device.rules
 SUBSYSTEM=="video*",ATTRS{idVendor}=="046d",ATTRS{idProduct}=="0826",KERNELS=="1-2.1",MODE="0666",SYMLINK+="video10"
 
 ```
+
 <br>
 idVendor and idProduct can use the command to find it:
 <br>
