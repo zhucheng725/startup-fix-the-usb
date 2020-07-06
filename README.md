@@ -37,7 +37,7 @@ lsusb
 kernals can use this command to find it:<br>
 ```
 find /sys/ -name "video*"
-dmeg --follow
+dmesg --follow
 ```
 
 And restart the system.<br>
